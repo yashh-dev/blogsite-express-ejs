@@ -1,0 +1,29 @@
+{
+  "name": "markdown-blogsite",
+  "version": "1.0.0",
+  "description": "blog page with express ejs nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashh-dev/markdown-blogsite.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "ejs",
+    "markdown"
+  ],
+  "author": "yashwanth krishna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yashh-dev/markdown-blogsite/issues"
+  },
+  "homepage": "https://github.com/yashh-dev/markdown-blogsite#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
