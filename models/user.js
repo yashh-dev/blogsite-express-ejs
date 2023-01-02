@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
 	{
-		userName: {
+		username: {
 			type: String,
 			required: [true, "user must have a username"],
 		},
@@ -27,4 +27,6 @@ const userSchema = new Schema(
 	{ timestamps: true }
 );
 
-module.exports = mongoose.model('User',userSchema);
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;
