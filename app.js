@@ -45,13 +45,16 @@ passport.deserializeUser(User.deserializeUser());
 
 //ROUTER
 const authRouter = require("./routes/auth");
+const postRouter = require("./routes/post");
 
 app.get("/", (req, res) => {
+	req.session.user = null;
 	console.log(req.session);
 	res.send("Home");
 });
 
 app.use("/api/v1/user", authRouter);
+app.use("/api/v1/post", postRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port,()=>{
